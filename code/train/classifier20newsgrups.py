@@ -116,7 +116,7 @@ def main():
         #loadedModel = loadModel(jsonFile, weightsFile)
         #loadedModel.compile(loss={'output': 'sparse_categorical_crossentropy'}, optimizer='adam', metrics=['accuracy'])
         #loss, accuracy = loadedModel.evaluate(test_word_sequences, y_test.to_numpy(), verbose=0)
-        loss, accuracy = model.evaluate(test_word_sequences, y_test.to_numpy(), verbose=0)
+        loss, accuracy = model.evaluate(test_word_sequences, y_test.to_numpy(dtype=int), verbose=0)
         print(accuracy)
     else:
         print("use pickled files")
