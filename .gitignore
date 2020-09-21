@@ -19,3 +19,6 @@ wordvectors/glove.6B.100d.txt
 wordvectors/glove.6B.200d.txt
 wordvectors/glove.6B.300d.txt
 wordvectors/glove.6B.50d.txt
+code/common/__pycache__/preproc.cpython-37.pyc
+code/common/__pycache__/loaddata.cpython-37.pyc
+code/common/__pycache__/constants.cpython-37.pyc

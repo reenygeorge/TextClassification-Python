@@ -154,7 +154,7 @@ def symspell_dict(max_edit_dist, prefix_len):
     sym_spell = SymSpell(max_edit_dist, prefix_len)
 
     #create the symspell dictionary using the dictfile
-    if not sym_spell.create_dictionary(dictfile):
+    if not sym_spell.create_dictionary(str(dictfile)):
         print("corpus file not found")
     return sym_spell
 

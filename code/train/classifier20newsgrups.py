@@ -98,7 +98,6 @@ def main():
         train_word_sequences = word_sequences[:num_traindata]
         test_word_sequences = word_sequences[num_traindata:]
 
-        max_length = 500
 
         train_word_sequences = tf.keras.preprocessing.sequence.pad_sequences(train_word_sequences, maxlen=max_length,
                                                                        padding='post')
